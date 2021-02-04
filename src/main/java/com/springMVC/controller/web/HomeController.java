@@ -14,4 +14,11 @@ public class HomeController {
         ModelAndView mav = new ModelAndView("web/home");
         return mav;
     }
+
+    @RequestMapping(value = "/dang-nhap", method = RequestMethod.GET)
+    public ModelAndView loginPage() {
+        // Chỗ này trả data trong mav về cho trang view
+        ModelAndView mav = new ModelAndView("login");
+        return mav;
+    }
 }

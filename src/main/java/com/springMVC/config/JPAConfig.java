@@ -59,8 +59,9 @@ public class JPAConfig {
     //Setup cai này để tự động sinh ra table cho Entity - khai báo ở META-INF/persistence-data
     Properties additionalProperties(){
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-//        properties.setProperty("hibernate.bhm2ddl.auto", "none");
+//        properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+//        properties.setProperty("hibernate.hbm2ddl.auto", "create");
+        properties.setProperty("hibernate.bhm2ddl.auto", "none");
         return properties;
     }
 }
