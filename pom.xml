@@ -12,6 +12,7 @@
   <properties>
     <servlet.api.version>3.1.0</servlet.api.version>
     <springframework.version>4.3.13.RELEASE</springframework.version>
+    <springsecurity.version>3.2.8.RELEASE</springsecurity.version>
     <jsp.api.version>2.3.1</jsp.api.version>
     <jstl.version>1.2</jstl.version>
     <hibernate.version>4.3.6.Final</hibernate.version>
@@ -59,6 +60,37 @@
       <version>${springframework.version}</version>
     </dependency>
 
+    <!-- spring aspects -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>${springframework.version}</version>
+    </dependency>
+
+    <!-- spring security -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-acl</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
+
+    <!-- spring secuirty taglibs -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-taglibs</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
+
     <!-- servlet api -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -87,7 +119,6 @@
       <version>2.4.2</version>
     </dependency>
 
-    <!-- my SQL  -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
@@ -95,26 +126,23 @@
     </dependency>
 
     <!-- Hibernate -->
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
       <version>${hibernate.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.hibernate.javax.persistence</groupId>
       <artifactId>hibernate-jpa-2.1-api</artifactId>
       <version>1.0.0.Final</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
       <version>${hibernate.version}</version>
     </dependency>
 
+    <!-- Spring data -->
     <dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-jpa</artifactId>
@@ -122,6 +150,7 @@
     </dependency>
 
   </dependencies>
+
 
   <build>
     <plugins>
