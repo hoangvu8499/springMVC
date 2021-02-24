@@ -21,7 +21,7 @@
               http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<context:component-scan
-		base-package="com.springMVC.controller" />
+		base-package="com.springMVC.controller, com.springMVC.api" />
 
 	<mvc:annotation-driven />
 
