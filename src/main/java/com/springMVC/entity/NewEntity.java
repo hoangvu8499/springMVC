@@ -4,11 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "new")
-public class NewEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class NewEntity extends BaseEntity{
 
     @Column(name = "title")
     private String title;
@@ -37,10 +33,6 @@ public class NewEntity {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getTitle() {
